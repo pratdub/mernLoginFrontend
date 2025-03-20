@@ -1,0 +1,33 @@
+.home-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  h1{
+    color: black;
+  }
+  
+  .home-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .post-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .post-title {
+    margin: 0;
+    color: #333;
+  }
+  
+  .post-content {
+    color: #666;
+  }
+  

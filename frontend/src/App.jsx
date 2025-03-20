@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
@@ -7,6 +7,11 @@ import CreatePostPage from "./pages/CreatePostPage";
 
 const App = () => {
   const [token, setToken] = useState(localStorage.getItem("token"));
+
+  useEffect(() => {
+    const storedToken = localStorage.getItem("token");
+    setToken(storedToken);
+  }, []);
 
   return (
     <Router>
